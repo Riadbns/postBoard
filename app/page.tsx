@@ -3,7 +3,7 @@ import Trashdelete from "./Trash";
 import style from "./page.module.css";
 
 async function getPosts() {
-  const res = await fetch(`${process.env.Base_URL}/api/getPosts`);
+  const res = await fetch(`https://postboard-production-373e.up.railway.app/api/getPosts`);
   if (!res.ok) {
     console.log(res);
   }
