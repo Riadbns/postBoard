@@ -15,7 +15,7 @@ export default function Trashdelete(props: Props) {
   async function handleDelete() {
     setIsDeleting(true);
     try {
-      const res = await fetch(`http://localhost:3000/api/deletePost`, {
+      const res = await fetch(`${process.env.Base_URL}/api/deletePost`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
