@@ -20,7 +20,7 @@ export default function FormPost() {
 
   async function handledelete(){
     try {
-      const res = await fetch(`http://localhost:3000/api/deleteAllPost`, {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/deleteAllPost`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
